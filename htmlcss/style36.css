@@ -1,0 +1,21 @@
+/* CSS for float and Clear */
+
+#content{
+    color: white;
+    width: 70%;
+    background-color: green;
+    height: 200px;
+    float: left;
+}
+#sidebar{
+    color: white;
+    width: 30%;
+    background-color: indianred;
+    height: 150px;
+    float: left;
+}
+#footer{
+    color: white;
+    background-color: gray;
+    clear: both;
+} 

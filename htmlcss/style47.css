@@ -1,0 +1,42 @@
+/* Flexbox in CSS */
+.flex-container{
+    background-color: indianred;
+    display: flex;
+    height: 400px;
+    /* flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
+    align-content: flex-end; */
+}
+.flex-child{
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+#one{
+    /* order: 2; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 200; */
+    flex-basis: 500px;
+    align-self: flex-start;
+}
+#two{
+    /* order: 3; */
+    /* flex-grow: 4; */
+    /* flex-shrink: 4; */
+    flex-basis: 400px;
+    align-self: center;
+}
+#three{
+    /* order: 1 */
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    flex-basis: 200px;
+    align-self: flex-end;
+}

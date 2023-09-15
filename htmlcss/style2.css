@@ -1,0 +1,9 @@
+body
+{
+    /*we use it for background image in css*/
+    background-image: url('images/image2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+} 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blub</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            display: inline-block;
+            margin: 50px;
+            padding: 50px;
+            border: 2px solid black;
+            border-radius: 50%;
+            font-weight: bolder;
+        }
+        #btn1{
+            margin: 30px;
+            padding: 20px;
+            background-color: green;
+            color: White;
+            font-weight: bolder;
+        }
+        #btn2{
+            margin: 30px;
+            padding: 20px;
+            background-color: red;
+            color: White;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="light">light</div>
+    <br>
+    <button id="btn1">On</button>
+    <button id="btn2">Off</button>
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let light = document.getElementById("light");
+
+        btn1.addEventListener("click", ()=>{
+           light.style.backgroundColor = "yellow"
+           light.style.color = "blue";
+
+        })
+
+        btn2.addEventListener("click", ()=>{
+            light.style.backgroundColor = "white";
+            light.style.color = "black";
+        })
+    </script>
+</body> 
+</html>

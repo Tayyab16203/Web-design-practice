@@ -1,0 +1,25 @@
+<!-- Change HTML with JavaScript ( innerHTML ) -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <div id="intro">
+           <p>  hello this is a p tag. </p> 
+        </div>
+
+        <script>
+            let elm = document.getElementById("intro");
+
+            elm.innerHTML = "<h2> this is a heading </h2>"      //we can change html in javascript.
+
+            // let content = elm.innerHTML;                     //we can only fetch html in javascript.
+
+            // console.log(content);
+        </script>
+    </body>
+</html>

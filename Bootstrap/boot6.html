@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+ 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Create from input groups from bootstrap. -->
+                <form>
+                  <legend>Input group form example</legend>
+
+                  <!-- Basic example of input group text-->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" >@</span>
+                    <input type="text" class="form-control" placeholder="Username" id="basic-addon1" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's Username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                  </div>
+
+                  <label for="basic-url" class="form-label">Your vanity url </label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    <input type="text" class="form-control" >
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control">
+                    <span class="input-group-text">.00</span>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="server">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">with textarea</span>
+                    <textarea class="form-control" cols="20" rows="5 "></textarea>
+                  </div>
+
+                  <!-- Wrapping -->
+                  <div class="input-group flex-nowrap mb-3">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="addon-wrapping">
+                  </div>
+
+                  <!-- sizing -->
+                  <!-- small -->
+                  <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  <!-- default -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+                  <!-- large -->
+                  <div class="input-group input-group-lg mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                  </div>
+
+                  <!-- Checkboxes and radios in input form.-->
+                  <div class="input-group mb-3">
+                    <div class="input-group-text">
+                      <input type="checkbox" class="form-check-input mt-0">
+                    </div>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-text">
+                      <input type="radio" class="form-check-input">
+                    </div>
+                    <input type="text" class="form-control">
+                  </div>
+                  
+                  <!-- multiple group. -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">First and last name</span>
+                    <input type="text" class="form-control">
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <!-- Multiple addons. -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">0.00</span>
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">0.00</span>
+                  </div>
+
+                  <!-- Button addons -->
+                  <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary">button</button>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username">
+                    <button type="button" class="btn btn-outline-secondary">button</button>
+                  </div>
+                  <div class="input-group mb-3">
+                    <button type="button" class="btn btn-outline-secondary">button</button>
+                    <button type="button" class="btn btn-outline-secondary">button</button>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with two buttons">
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Example text with two buttons">
+                    <button type="button" class="btn btn-outline-secondary">button</button>
+                    <button type="button" class="btn btn-outline-secondary">button</button>
+                  </div>
+
+                  <!-- Buttons with dropdowns. -->
+                  <div class="input-group mb-3">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another Action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider" href="#"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another Action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider" href="#"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another Action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider" href="#"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another Action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider" href="#"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Segmented buttons -->
+                  <div class="input-group mb-3">
+                    <button type="button" class="btn btn-outline-secondary">Action</button>
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another Action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control">
+                    <button type="button" class="btn btn-outline-secondary">Action</button>
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another Action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Custom forms -->
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="selectoption">Option</label>
+                    <select class="form-select">
+                      <option selected>Choose...</option>
+                      <option value="1">one</option>
+                      <option value="2">two</option>
+                      <option value="3">three</option>
+                    </select>
+                  </div>
+                  <div class="input-group mb-3">
+                    <button type="button" class="btn btn-outline-secondary">button</button>
+                    <select class="form-select">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">three</option>
+                    </select>
+                  </div>
+
+                  <!-- Custom file input -->
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="fileinput">Upload</label>
+                    <input type="file" class="form-control" >
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <button type="button" class="btn btn-outline-secondary">button</button>
+                    <input type="file" class="form-control">
+                  </div>
+
+                  
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

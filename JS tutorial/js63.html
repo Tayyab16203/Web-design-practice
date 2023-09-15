@@ -1,0 +1,38 @@
+<!-- Browser Object Model (BOM) in JavaScript -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+
+
+        <script>
+            //Window is a default object.
+
+            /*
+            var x = "hello";
+            console.log(x);
+            console.log(window.x);      //it can work because it is a window property.
+            */
+           
+            /*
+            alert("hy..");
+            window.alert("hy..");        //it can work because it is a window property.
+            */
+            
+
+            function xyz(){
+                console.log("hi...");
+            }
+
+            xyz();
+            window.xyz();              //it is a window property that why the function can work.
+        </script>
+
+    </body>
+</html>

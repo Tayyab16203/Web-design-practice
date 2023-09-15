@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+    </head>
+    <body>
+        
+        <button id="btn" onclick="fun()">Redirect to Google</button>
+        <button id="btn1" onclick="fun1()">Reload</button>
+
+        <script>
+
+            function fun(){
+                // window.location = "https://www.google.com";          //1st method.
+                // location.href =  "https://www.google.com";           //2nd method.
+                // location.assign("https://www.google.com");           //3rd method.it can put a history in  google.
+                location.replace("https://wwwgoogle.com");           //4th method.it can not repeat a history
+            }
+
+            
+            function fun1(){
+                location.reload();                          //it can reload a page.
+            }
+
+
+
+            // console.log(location.href);
+            // console.log(location.pathname);
+            // console.log(location.protocol);
+
+        </script>
+
+    </body>
+</html>

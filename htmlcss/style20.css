@@ -1,0 +1,13 @@
+/* css gradient */
+#div1{
+    height: 300px;
+    border: 2px solid gray;
+    /* linear gradient */
+    background-image: linear-gradient(to right, green 10%,blue 30%,red 50%);
+}
+#div2{
+    height: 300px;
+    border: 2px solid gray;
+    /* radial gradient */
+    background-image: radial-gradient(circle, green 20%,blue 30%,red 50%);
+}

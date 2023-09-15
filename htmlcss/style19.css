@@ -1,0 +1,7 @@
+/* css for image sprite */
+#sprite{
+    height: 80px;
+    background-image: url('images/image5.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px -80px;
+}

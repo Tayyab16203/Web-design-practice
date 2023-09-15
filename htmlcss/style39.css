@@ -1,0 +1,23 @@
+/* CSS Transition */
+#div1
+{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 100px;
+    display: inline-block;
+    /* transition-property: width, background-color; */
+    /* transition-property: all; */
+    /* transition-duration: 500ms; */
+    /* transition-delay: 500ms; */
+    /* transition-timing-function:  ease-in-out; */
+    /* shotcut for transition */
+    transition: width 2s, height 3s, background-color 3s, transform 5s, border 5s;
+}
+#div1:hover{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    transform: rotate(360deg);
+    border: 20px solid black;
+} 

@@ -1,0 +1,24 @@
+<!-- Spread Operator in ES6 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+        let array1 = [1,2,3];
+        let array2 = [5,4,6,...array1];    //the three dots(...) means we can add two array.the dots means spread operator.
+        console.log(array2);
+
+
+        let ary1 = [1,2,3];
+        let ary2 = [4,6,5];
+        let ary3 = [...ary1,...ary2];        //add of two arrays. three dots means spread two arrays.
+        console.log(ary3);
+    </script>
+</body>
+</html>

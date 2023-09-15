@@ -1,0 +1,42 @@
+<!-- Get Width and Height of Element in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+        <!-- internal css -->
+        <style>
+            .color{
+                background-color: yellow;
+                color: red;
+            }
+            .dim{
+                border: 1px solid red;
+                padding: 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="box" class="color  dim">
+            <p>This is a dummy text !</p>
+        </div>
+
+        <script>
+            let box = document.getElementById("box");
+
+            let width = box.offsetWidth;     //it can show the width with border.
+            let height = box.offsetHeight;   //it can show the height with border.
+
+            let width1= box.clientWidth;     //it can show the width without border.
+            let height1 =box.clientHeight;   //it can show the height without border.
+
+            console.log(width);
+            console.log(height);
+            console.log(width1);
+            console.log(height1);
+        </script>
+    </body>
+</html>

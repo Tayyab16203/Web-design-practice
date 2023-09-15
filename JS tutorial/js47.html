@@ -1,0 +1,30 @@
+<!-- Replace Element in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <ul id="menu">
+            <li>Home</li>
+            <li>Products</li>
+            <li>About us</li>
+        </ul>
+        <script>
+            // Replace element in html by javscript.
+            let elm = document.getElementById("menu");
+
+            let item =document.createElement("li");
+            item.textContent ="Services";
+
+            let replace = elm.firstElementChild.nextElementSibling;
+
+            elm.replaceChild(item, replace);
+
+
+        </script>
+    </body>
+</html>

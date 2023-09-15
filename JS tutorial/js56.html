@@ -1,0 +1,32 @@
+<!-- Page Load Events in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <!-- image will taken by google -->
+        <img id="image" width ="500" src="images/10mb pic.jpg" >
+
+        <script>
+            window.addEventListener("DOMContentLoaded", function(){     //when a DOM  is fully created it can show a message (DOM tree created).
+                console.log("DOM tree created");
+            });
+
+            let img =document.getElementById("image");  //when the image is load is complete it can show a message (Fully Loaded).
+            img.addEventListener("load", function(){
+                console.log("Fully Loaded");
+            });
+
+
+
+            window.addEventListener("load", function(){
+                console.log("Fully Window Loaded");     //when a full window is load is complete it can show a message (Fully Window Loaded Loaded).
+            });
+
+        </script>
+    </body>
+</html>

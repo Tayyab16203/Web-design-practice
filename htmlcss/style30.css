@@ -1,0 +1,18 @@
+/* CSS pseudo elements */
+p::first-line{
+    font-size: 35px;
+    color: red;
+    
+}
+h1::before{
+    content: url('images/apple-touch-icon.png');
+}
+/* write something after heading */
+h1::after{
+    content: " added after";
+}
+/* Selection of text / copy of text */
+::selection{
+    color: white;
+    background-color: black;
+} 

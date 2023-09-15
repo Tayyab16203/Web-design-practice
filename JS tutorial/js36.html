@@ -1,0 +1,30 @@
+<!-- How to select an element by Tag in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      
+        <h2>heading 1</h2>
+        <div id="div1">
+            <p>paragrap 1</p>
+            <h2>heading 2</h2>
+            <p>paragrap 2</p>
+            <h2>heading 3</h2>
+            <p>paragrap 3</p>
+        </div>
+
+        <script>
+            // let elm = document.getElementsByTagName("h2");
+            let div1 = document.getElementById("div1");
+            let elm  = div1.getElementsByTagName("h2");
+            for(let i = 0;i < elm.length; i++){
+                elm[i].innerHTML = " hello ";
+            }
+        </script>
+    </body>
+</html>

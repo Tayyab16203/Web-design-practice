@@ -1,0 +1,47 @@
+<!--  Insert Before an Element in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <ul id="list">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+        </ul>
+
+        <script>
+        // we can add element in ul.
+          let elm = document.getElementById("list");
+
+          let item = document.createElement("li");
+          item.textContent = "new list 5";
+
+          let pos = elm.firstElementChild.nextElementSibling.nextElementSibling;
+          elm.insertBefore(item, pos);
+
+
+
+        //we can add element in  body.
+          /*
+          let parent = document.body;
+          
+          let item = document.createElement("h2");
+          item.textContent = "this is a new heading."
+
+          let elm = document.getElementById("list");
+          
+          parent.insertBefore(item, elm);
+          */
+         
+
+
+        </script>
+         
+    </body>
+</html>

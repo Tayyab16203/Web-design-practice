@@ -1,0 +1,37 @@
+<!-- Traversing elements in JavaScript -->
+<!-- To select a parent from child node. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <h2 >heading 1</h2>
+        <ul>
+            <li id="intro">list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+        </ul>
+        
+        <ul>
+            <li>list a</li>
+            <li>list b</li>
+            <li>list c</li>
+            <li>list d</li>
+        </ul>
+
+        <script>
+            // To select a parent from child node.
+            let elm = document.getElementById("intro");
+            let prt = elm.parentElement;
+            
+            console.log(prt);
+            
+        </script>
+    </body>
+</html>

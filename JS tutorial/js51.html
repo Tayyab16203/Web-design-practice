@@ -1,0 +1,32 @@
+<!--  Get Computed CSS in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+        <!-- internal css -->
+        <style>
+            #btn{
+                background-color: red;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+
+    <button id="btn" name="form1"> send </button>
+        
+        <script>
+            let btn = document.getElementById("btn");
+            
+            let css =getComputedStyle(btn);        //we can check that which css is applied .
+            console.log(css.color);
+            console.log(css.backgroundColor);
+
+        </script>
+
+    </body>
+</html>

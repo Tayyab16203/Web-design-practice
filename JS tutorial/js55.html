@@ -1,0 +1,32 @@
+<!--Remove Event Listener in JavaScript -->
+<!-- We can search Dom event name on google. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+
+        <button id="btn" > Click me !</button>
+
+        <script>
+            let btn =document.getElementById("btn");
+
+            function click1(){
+                console.log("Click 1 activated");
+            }
+            function click2(){
+                console.log("Click 2 activated");
+            }
+
+            btn.addEventListener("click", click1);  //add event click.
+            btn.addEventListener("click", click2);  //add event click.
+
+            btn.removeEventListener("click", click2);  //remove event click.
+
+        </script>
+    </body>
+</html>

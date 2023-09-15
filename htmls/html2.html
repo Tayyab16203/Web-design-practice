@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>
+            This is html second page.
+        </title>
+
+    </head>
+    <body>
+        <!--how to create an Email that how can we send a messege -->
+        <p>
+            Content us on <a href="mailto:admin@website.com?subject=how are you"> admin@website.com </a>
+        </p>
+        <!--image-->
+        <img src="Images/image1.png" alt="logo" width="200" height="100">
+        <!--for moving elements o screen use marquee-->
+        <marquee  direction="right">This is a moving tag . </marquee>
+        <!--to create ordered list-->
+        <ol type="A">
+            <li> Coffe
+                <ol type="1">
+                    <li> black Coffe</li>
+                    <li> green coffe</li>
+                </ol>
+            </li>
+            <li> milk
+                <ol type="1">
+                    <li> white milk</li>
+                </ol> 
+            </li>
+            <li> Tea 
+                <ol type="1">
+                    <li> black tea</li>
+                    <li> green tea</li>
+                    <li> white tea</li>
+                </ol>
+            </li>
+        </ol>
+        <!--To create unordered list-->
+        <ul style="list-style-type: black circle;">
+            <li> coffe
+                <ul style="list-style-type: white circle;" >
+                    <li> black coffe</li>
+                    <li> white coffe</li>
+                </ul>
+            </li>
+            <li> milk</li>
+            <li> cold drinks</li>
+        </ul>
+        <ul style="list-style-type: black circle;">
+            <li> coffe
+                <ol type="1" >
+                    <li> black coffe</li>
+                    <li> white coffe</li>
+                </ol>
+        <!--To create Discription list-->
+        <dl>
+            <dt> coffe
+                <dd> - Coffee is hot drinks</dd>
+            </dt>
+            <dt > milk
+                <dd> - Milk is a White drinks</dd>
+            </dt>
+        </dl>
+        <!--To create a table of rows and coloums-->
+        <!--tr tag used for Row, td tag used for coloum, th tag used for heading or title-->
+        <!--rowspan used for combining the row, and colspan used for combining the coloum-->
+        <!--caption is connect the name to the table-->
+        <table border="2">
+            
+            <caption> Table Example</caption>
+            <tr>
+                <th>Row1</th>
+                <td>
+                    <img src="Images/image1.png" width="100" height="100">
+                </td>
+                <td colspan="2">
+                    <a href="http://www.google.com" target="-blank">Google link</a>
+                </td>
+            </tr>
+        </table>
+        <table border="2">
+            <thead style="color: red ;">
+                <tr>
+                    <th>coloum 1</th>
+                    <th>coloum 2</th>
+                    <th>coloum 3</th>
+                </tr>
+            
+            </thead>
+            <tbody style="color:green">
+            <tr>
+                <td rowspan="2"> data 4</td>
+                <td> data 5</td>
+                <td> data 6</td>
+            </tr>
+            <tr>
+                <td> data 7</td>
+                <td colspan="2"> data 8 </td>
+                
+            </tr>
+            </tbody>
+            <tfoot style="color:red;">
+                <tr>
+                    <th>coloum 1</th>
+                    <th>coloum 2</th>
+                    <th>coloum 3</th>
+                </tr>
+            
+            </tfoot>
+        </table>
+    
+
+
+    </body>
+
+</html>

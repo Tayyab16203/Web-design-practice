@@ -1,0 +1,28 @@
+<!--  Clone or Copy Element in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <ul id="menu">
+            <li>Home</li>
+            <li>services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <script>
+            let menu =document.getElementById("menu");
+
+            let cloneElm = menu.cloneNode(true);   //If we can copy (ul and its child) then write "true",  and if we copy only (ul) then write "false".
+            cloneElm.id = "mobile-menu"
+            document.body.appendChild(cloneElm);      ///we can paste it in body.
+            
+            
+            console.log(cloneElm);
+        </script>
+    </body>
+</html>

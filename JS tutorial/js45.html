@@ -1,0 +1,26 @@
+<!-- Remove Child Element in JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <ul id="menu">
+            <li>Home</li>
+            <li>Products</li>
+            <li>About us</li>
+        </ul>
+        <script>
+            let parent =document.getElementById("menu");
+            let elm =parent.firstElementChild.nextElementSibling;
+
+            parent.removeChild(elm);                //remove child 
+            // document.body.removeChild(parent);        //remove ul with child
+
+
+            // paerent.remove();
+        </script>
+    </body>
+</html>

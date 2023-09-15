@@ -1,0 +1,43 @@
+<!-- DOM Events in JavaScript -->
+<!-- We can search Dom event name on google. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <button id="btn1" > Click me !</button>
+        <br><br>
+        <button id="btn2" onclick="btnclick()"> click here </button>     <!--for inline we can write (onclick)-->
+        <br><br>
+        <button id="btn3">only click here!</button>
+
+        <script>
+            // We can search dom event name on google.
+            function btnclick(){
+                alert("Button  was clicked !");
+            }
+        
+
+            let btn1 = document.getElementById("btn1");                   
+            btn1.addEventListener("click", btnclick);     //add a dom event.  in javascript we can write ("click") and inline we can write (onclick).
+        
+
+            let btn3 = document.getElementById("btn3");                   
+            btn3.addEventListener("click", function (){         //use of Anonymous function.
+                console.log("Btn clicked !");
+            });
+
+            btn3.addEventListener("mouseover", function (){     //use of mouseover event.
+                console.log("mouse over has been activated!");
+            });
+
+            btn3.addEventListener("mouseout", function (){     //use of mouseout event.
+                console.log("Mouse out is activated.");
+            });
+        </script>
+    </body>
+</html>

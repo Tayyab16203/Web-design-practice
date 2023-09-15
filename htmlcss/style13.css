@@ -1,0 +1,19 @@
+/* Css for px,cm,mm,in,pt,pc,%,vh,vw,em,rem, */
+html
+{
+    font-size: 14px;
+}
+#parent
+{
+    /* border: 2px solid red;
+    height: 50vh;
+    width: 50vw; */
+    font-size: 4rem;
+}
+#child
+{
+    font-size: 2em;
+    /* font-size: 0.5em; */
+    /* border: 1px solid blue;
+    width: 50%; */
+}

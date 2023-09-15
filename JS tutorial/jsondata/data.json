@@ -1,0 +1,12 @@
+{
+    "name": "Tayyab",  
+    "age": 25,
+    "is_student": true,
+    "passport_no": null,
+    "p_lang": ["c", "c++", "java", "python"],
+    "address": {
+        "city":"islamabad",
+        "state":"pakistan",
+        "pincode": 213231
+    }
+}

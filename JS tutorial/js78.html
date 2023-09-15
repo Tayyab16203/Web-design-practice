@@ -1,0 +1,29 @@
+<!-- Rest parameters in ES6 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <script>
+        function sum(...args){                   //we can use three dots(...) for rest .it means we can pass unlimited number of arguments.
+            let result = 0;
+            for(let i=0; i<args.length; i++){
+                result += args[i];
+            }
+            console.log(result);
+        }
+
+        sum(5,10,20,5);
+
+        sum();
+    </script>
+
+
+</body>
+</html>

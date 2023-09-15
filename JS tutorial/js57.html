@@ -1,0 +1,92 @@
+<!-- Mouse Events in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+        <style>
+            #box1{
+                height: 100px;;
+                width: 100px;
+                background-color: blueviolet;
+            }
+            #box2{
+                height: 100px;;
+                width: 100px;
+                background-color: yellow;
+            }
+            #box3{
+                height: 100px;;
+                width: 100px;
+                background-color: red;
+            }
+            #box4{
+                height: 100px;;
+                width: 100px;
+                background-color: black;
+            }
+            #box5{
+                height: 100px;;
+                width: 100px;
+                background-color: green;
+            }
+            #box6{
+                height: 100px;;
+                width: 100px;
+                background-color: goldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1" onclick="fun1()" oncontextmenu="fun2()"> </div>
+        <hr>
+        
+        <div id="box2" ondblclick="fun3()" > </div>
+        <hr>
+
+        <div id="box3" onmousedown="fun4()"></div>
+        <hr>
+
+        <div id="box4" onmouseup="fun5()"></div>
+        <hr>
+
+        <div id="box5" onmouseover="fun6()"></div>
+        <hr>
+
+        <div id="box6" onmouseout="fun7()"></div>
+
+
+        <script>
+            function fun1(){
+                alert("Click event")
+            }
+
+            function fun2(){
+                alert("Right Click event")
+            }
+
+            function fun3(){
+                alert("Double Click event")
+            }
+
+            function fun4(){
+                alert("mousedown event")
+            }
+
+            function fun5(){
+                alert("mouseup event")
+            }
+
+            function fun6(){
+                alert("mouse over event")
+            }
+
+            function fun7(){
+                alert("mouse out event")
+            }
+
+        </script>
+    </body>
+</html>

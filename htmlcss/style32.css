@@ -1,0 +1,56 @@
+/* CSS position property */
+/* 
+  1.static (default) -normal flow.
+  2.Relative. 
+  3.fixed. ( it can be used fixed in body)
+  4.absolute.
+   */
+   /* 
+   1.top
+   2.bottom.
+   3.left.
+   4.right.
+    */
+    body{
+        height: 1000px;
+        border: 2px solid red;
+    }
+    #parent{
+        border: 1px solid black;
+        padding: 20px;
+        width: 50%;
+        margin: 100px;
+        position: relative;
+ 
+    }
+    #one{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        display: inline-block;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+
+    }
+    #two{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        display: inline-block;
+        /* position: relative;
+        top: 50px;
+        left: 50px; */
+
+    }
+    #three{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+
+
+    }

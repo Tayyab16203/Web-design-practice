@@ -1,0 +1,15 @@
+/* CSS clear */
+#p1{
+    border: 2px solid red;
+    overflow: auto;
+}
+#img3{
+    float: right;
+    width: 100px;
+    height: auto;
+}
+/* Use of clear */
+#img4{
+    float:  right;
+    clear: right;
+} 

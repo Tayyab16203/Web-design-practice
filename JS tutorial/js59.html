@@ -1,0 +1,45 @@
+<!-- Scroll Event in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+        <style>
+            body{
+                height: 2500px;
+            }
+        </style>
+    </head>
+    <body>
+      <h1>Heading</h1>
+        <script>
+            /*
+            window.addEventListener("scroll", function(){
+                console.log("scrolling....")
+            });
+            */
+
+            /*
+            window.addEventListener("wheel", function (event){
+                if(event.deltaY  < 0){                   //(deltaY) is used for vertical scrolling , and (deltaX) is used for horinzental scrolling.
+                    console.log('scrolling up...');
+                } else if(event.deltaY > 0){
+                    console.log("scrolling down.....");
+                }
+            });
+            */
+
+            window.addEventListener("scroll", function (){ 
+                if(window.pageYOffset > 200){             //(PageYOffset) can show the vertical scrolling pixels , and pageXOffset can show the horizentally scrolling pixels. 
+                    document.body.style.backgroundColor = "red";       
+                    console.log(pageYOffset);
+                }else{
+                    document.body.style.backgroundColor = "white";
+                }
+            });
+
+        </script>
+    </body>
+</html>

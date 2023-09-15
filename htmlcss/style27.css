@@ -1,0 +1,20 @@
+/* CSS initial and inherit */
+#green{
+    color: green;
+
+}
+#blue{
+    color: red;
+
+}
+/* initial can take default color */
+#initial{
+    color: initial;
+
+}
+/* inherit can take its parent color */
+#inherit{
+    color: inherit;
+
+}
+ 

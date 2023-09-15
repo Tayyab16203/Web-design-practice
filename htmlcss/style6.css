@@ -1,0 +1,31 @@
+/*css border */
+#b1
+{
+    /*css for border */
+    border-style: solid;
+    border-width: 10px;
+    border-color: purple;
+}
+#b2
+/* border for Top,right,bottem,left */
+{
+    border-style: solid groove dashed  outset;
+    border-width: 10px 20px 5px 15px;
+    border-color: red blue yellow green;
+}
+#b3
+{
+    /*border for radius mean border corners*/
+    border: 5px solid saddlebrown;
+    border-radius: 15px;
+}
+#b4 
+{
+    /*border for only Top line*/
+    border-top-style: dotted;
+    border-bottom-style: dashed;
+    border-top-width: 20px;
+    border-bottom-width: 15px;
+    border-top-color:  blue;
+    border-bottom-color: rgb(0, 253, 253);
+}

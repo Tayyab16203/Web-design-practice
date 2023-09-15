@@ -1,0 +1,34 @@
+ /* CSS margin: outside of border area is called Margin */
+ .m1
+ {
+    border: 3px solid red;
+    padding: 25px 50px 20px 70px;
+    margin: 20px;
+    color: darkorange;    
+ }
+
+ body
+ {
+    border: 5px dotted black;
+    height: 750px;
+   
+ }
+ /* CSS margin*/
+ #marg
+ {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 20%;
+    /* Shotcut for margin */
+    /* margin: 25px 12px 40px 60px; */
+ }
+ #marg2
+ /* shotcut for margin */
+ {
+    width: 1000px;
+    height: 100px ;
+    /* only margin mean to write it Top And Bottom space only and auto is used for left and right margin.*/
+    margin:50px auto;
+
+ }

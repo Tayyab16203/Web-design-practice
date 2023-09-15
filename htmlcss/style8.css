@@ -1,0 +1,16 @@
+/* css padding: mean a space betweeen border and content */
+#p1
+{
+    border: 5px solid red;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 40%;
+}
+#p2
+/* shotcut for border and padding */ 
+{
+    border: 5px solid blue;
+    padding: 200px 300px 150px 100px;
+
+}

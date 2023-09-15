@@ -1,0 +1,8 @@
+/* css filters */
+img{
+    /* we can use multiple types of filter on one image */
+    filter: blur(2px) brightness(50%) ;
+    filter: grayscale(80%);
+    filter: hue-rotate(90deg);
+    /* filter: drop-shadow(15px 15px 7px red); */
+}

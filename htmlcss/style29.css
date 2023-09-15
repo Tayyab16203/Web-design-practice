@@ -1,0 +1,11 @@
+/* CSS pseudo classes  */
+/* All pseudo classes is in w3school or google */
+li:nth-child(3n){
+    color: red;
+}
+p:nth-last-child(2n){
+    color: blue;
+}
+input:focus{
+    border: 5px solid red;
+} 

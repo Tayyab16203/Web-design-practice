@@ -1,0 +1,51 @@
+<!-- Change CSS Classes in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+        <!-- internal css -->
+        <style>
+            .color{
+                background-color: yellow;
+                color: red;
+            }
+            .dim{
+                border: 2px solid red;
+                padding: 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="box" class="color  dim">
+            <p>This is a dummy text!</p>
+        </div>
+
+        <script>
+            let box =document.getElementById("box");
+
+
+            // box.className += " dim1";                   //add a new class.
+            // box.classList.add("dim2");                 //add a class  (new method).
+            // box.classList.remove("color");             //remove a class
+            // box.classList.replace("color", "dim");        //replace the classes
+            let result = box.classList.contains("color");       //it can show that style is availible or not , it can show the result in ( trur or false).
+            console.log(result);
+
+            box.classList.toggle("dim4");                //it work is (if a dim class is availible then it can remove it) OR (if a dim class is not availible then it can add a class).
+
+            console.log(box.classList);    //we can check that how many classes is there by console.
+
+            /*
+            for(let css of box.classList){      //we can check that how many classes is there  by for loop.
+                console.log(css);
+            }
+            */
+
+        </script>
+
+    </body>
+</html>

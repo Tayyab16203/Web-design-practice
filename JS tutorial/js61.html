@@ -1,0 +1,67 @@
+<!-- Event Bubbling & Event Capturing in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+        <style>
+            body{
+                padding: 200px;
+                background-color: cornsilk;
+            }
+            #mydiv{
+                padding: 50px;
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mydiv">
+            <button id="btn">Click me</button>
+        </div>
+        <script>
+            let d = document.getElementById("mydiv");
+            let b = document.getElementById("btn");
+            
+            //(True mean Event capturing) here (Capturing mean first parent was clicked then child).
+            //(False mean bubbling). Here (Bubbling Mean Fisrt child was clicked and then parent).
+            //By default it can use Bubbling.
+
+            b.addEventListener('click', btnclicked, true);
+            d.addEventListener('click', divclicked, true);
+            document.body.addEventListener('click', bodyclicked, true);
+
+            function btnclicked(){
+                console.log("butten clicked....");
+            }
+            function divclicked(){
+                console.log("div clicked....");
+            }
+            function bodyclicked(){
+                console.log("body clicked....");
+            }
+            
+
+
+            /*
+            b.addEventListener('click', btnclicked, true);
+            d.addEventListener('click', divclicked, true);
+            document.body.addEventListener('click', bodyclicked, true);
+
+            function btnclicked(event){
+                console.log("butten clicked....");
+                event.stopPropagation();            //(stopPropagation) mean only click on this.
+            }
+            function divclicked(){
+                console.log("div clicked....");
+            }
+            function bodyclicked(){
+                console.log("body clicked....");
+            }
+            */
+
+        </script>
+    </body>
+</html>

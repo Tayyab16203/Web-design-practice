@@ -1,0 +1,18 @@
+/* Print Specific Style in CSS */
+@media screen {
+    p{
+        font-size: 20px;
+    }
+}
+@media print{
+    p{
+        font-size: 30px;
+    }
+    img{
+        display: inline-block;
+    }
+    div{
+        width: 50%;
+    }
+   
+} 

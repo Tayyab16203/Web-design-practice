@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- layout -->
+                <!-- horizental form -->
+                <form>
+                    <legend>Example of horizental form.</legend>
+                    <div class="row mb-3">
+                        <label for="inputemail3" class="col-sm-2 form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gridRadios">
+                                <label for="inputradio1" class="form-check-label">First radio</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gridRadios">
+                                <label for="inputradio2" class="form-check-label">Second radio</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gridRadios" disabled>
+                                <label for="inputradio3" class="form-check-label">Third disabled radio</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label for="inputcheckbox" class="form-check-label">Example checkbox</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+
+
+                    <!-- Horizontal form label sizing -->
+                    <div class="row mb-3">
+                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+                        </div>
+                      </div>
+
+
+                      <!-- Column sizing -->
+                      <div class="row g-3 mt-3 mb-3">
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" placeholder="City" aria-label="City">
+                        </div>
+                        <div class="col-sm">
+                          <input type="text" class="form-control" placeholder="State" aria-label="State">
+                        </div>
+                        <div class="col-sm">
+                          <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                        </div>
+                      </div>
+
+                </form>
+
+                <!-- Auto-sizing -->
+                <form class="row gy-2 gx-3 align-items-center">
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInput">Name</label>
+                    <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+                  </div>
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                    <select class="form-select" id="autoSizingSelect">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                      <label class="form-check-label" for="autoSizingCheck">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+
+                <!-- Inline forms -->
+                <form class="row row-cols-lg-auto g-3 align-items-center mt-4">
+                  <div class="col-12">
+                    <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                    </div>
+                  </div>
+                
+                  <div class="col-12">
+                    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                    <select class="form-select" id="inlineFormSelectPref">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                      <label class="form-check-label" for="inlineFormCheck">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

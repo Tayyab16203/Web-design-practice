@@ -1,0 +1,40 @@
+<!-- Events on Form in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+
+    </head>
+    <body>
+        <form action="">
+            <input type="text" id="myInput">
+        </form>
+        <script>
+            let x =document.getElementById("myInput");
+
+            x.addEventListener('focus', myFocusfunction);  //if we can click inside of textbox it background color is change in yellow.
+            x.addEventListener('blur' ,  myblurfunction);  //if we can click outside of textbox it background color is change in white.
+
+            x.addEventListener('change', function(){     //if we can change the value it will detect the value and write in the console. 
+                console.log(this.value);
+            });
+            
+            /*
+            x.addEventListener('input', function(){     //if we will write the value it will detect all the changes in console.
+                console.log(this.value);
+            });
+            */            
+
+            function myFocusfunction(){
+                x.style.backgroundColor = "yellow";
+            }
+            function myblurfunction(){
+                x.style.backgroundColor = "white"
+            }
+
+        </script>
+    </body>
+</html>

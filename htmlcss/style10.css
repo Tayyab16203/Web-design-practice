@@ -1,0 +1,72 @@
+/* CSS for text */ 
+body 
+{
+    border: 6px double darkorange;
+}
+
+#text
+{
+    width: 500px;
+    border: 2px solid black;
+    color: blue;
+    text-decoration: underline red 2px;
+    text-transform: capitalize;
+    line-height: 30px;
+    word-spacing: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    /* text-indent: 50px; */
+    /* white-space: pre; */
+    /* text-align: center; */
+}
+
+#shadow
+{
+    font-size: 70px;
+    text-shadow: 10px 10px 5px crimson;
+    writing-mode: vertical-lr;  /*lr: means left to right and rl means right to left*/
+}
+
+#text2
+{
+    color: blueviolet;
+    width: 500px;
+    border: 2px solid red;
+    margin-top: 30px;
+    text-decoration: underline black 5px;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-size: 20px;
+     /* text-align: right ; */
+    /* direction: rtl; */
+    /* font-size: 64px; */
+}
+
+/* use image in text line */
+img
+{
+    width: 70px;
+    max-height: 50px;
+    border: 1px solid blue;
+    vertical-align: middle;
+}
+
+#text3
+{
+    
+    margin-top: 30px;
+    width: 500px;
+    border: 2px solid black;
+    color: darkgoldenrod;
+    text-decoration: underline red 3px;
+    text-transform: lowercase;
+    font-size: 30px;
+    /* line-heigth means space between two lines */
+    line-height: 50px;
+    /* word-spacing means space betweeen two words */
+    word-spacing: 10px;
+    /* letter-spacing means space between two letters */
+    letter-spacing: 2px;
+    text-indent: 100px;
+    /* text-align: center; */
+}

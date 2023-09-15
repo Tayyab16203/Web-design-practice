@@ -1,0 +1,39 @@
+<!-- Array Destructuring in ES6 (JavaScript) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+
+    <script>
+        /*
+        let book = ["Advance JS", , 200, 150,["TechGun", 2021]];
+        
+        // let name = book[0];
+        // let pages = book[1];
+        // let price = book[2];
+        // console.log(pages);
+
+        let[name, number=19, pages, price,[publication, year]] = book;    //Array destructuring. the default value of number is 19.
+
+        console.log(publication);
+        */
+
+        //where we use it
+
+        function book(){
+            //do something
+            return ['Advance JS', 200];
+        }
+
+        let[book_title, price]= book();
+        console.log(book_title);
+    </script>
+
+</body>
+</html>

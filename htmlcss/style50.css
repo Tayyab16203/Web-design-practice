@@ -1,0 +1,44 @@
+/* CSS Grid */
+.grid-container{
+    background-color:indianred;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'
+    'end end end end end end';
+    grid-gap: 10px;
+}
+.grid-item{
+    background-color: wheat;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+} 
+#grid-1{
+    grid-area: header;
+    background-color: antiquewhite;
+}
+#grid-2{
+    grid-area: menu;
+    background-color: grey;
+}
+#grid-3{
+    grid-area: main;
+    background-color: black;
+    color: white;
+}
+#grid-4{
+    grid-area: right;
+    
+}
+#grid-5{
+    grid-area: footer;
+    background-color: khaki;
+}
+#grid-6{
+    grid-area: end;
+    background-color: aquamarine;
+}

@@ -1,0 +1,34 @@
+<!-- Key Down Event in JavaScript -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+        <style>
+            #box{
+                height: 100px;;
+                width: 100px;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box" > </div>
+
+        <script>
+            window.addEventListener("keydown", checkkey);     //when we can press the buttan it will work.
+            function checkkey(event){
+                console.log(event.key);
+            }
+
+            // window.addEventListener("keyup", checkkey);  //in (keyup) when we can release the buttan it will work.  
+            // function checkkey(event){
+            //     console.log(event.key);
+            // }
+
+        </script>
+    </body>
+</html>

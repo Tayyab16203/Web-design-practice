@@ -1,0 +1,26 @@
+<!-- Create and Append Element in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <ul id="list">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+        </ul>
+        <script>
+          let elm = document.getElementById("list");
+          
+          let item = document.createElement("li");
+          item.textContent = "new list 5";
+
+          elm.appendChild(item);
+        </script>
+    </body>
+</html>

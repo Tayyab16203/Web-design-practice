@@ -1,0 +1,19 @@
+/*css for selector*/
+/*Element selector*/
+p{
+    color: red;
+}
+/*id selector , for id selector we use # for id forexample #id */
+#p3{
+    color: blue;
+}
+.green-text{
+    color: green;
+}
+#h1{
+    font-size: 50px;
+}
+/*class selector , for class selector we use . for class forexample .class*/
+.underline-text{
+    text-decoration: underline;
+}

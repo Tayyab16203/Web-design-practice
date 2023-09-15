@@ -1,0 +1,36 @@
+<!-- Prevent Default in JavaScript -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <a href="https://www.google.com" id="anchor">Click me</a> -->
+
+        <form action="" id="myform">
+            <input type="text" >
+            <input type="submit">
+        </form>
+
+        <script>
+            /*
+            let link = document.getElementById("anchor");
+
+            link.addEventListener('click', function(event){
+                console.log('link clicked......');
+                event.preventDefault();   //we can use a preventdefault()  here.  which can not move to a google website. it just write a link clicked in console.
+            });
+            */
+
+            let form = document.getElementById("myform");
+
+            form.addEventListener("submit", function(event){
+                event.preventDefault();  //it can not submit the form because we can remove it by preventdefault();  , in preventdefault we can remove the natural behaviour of element.
+            });
+        </script>
+
+    </body>
+</html>

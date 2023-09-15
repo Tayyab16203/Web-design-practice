@@ -1,0 +1,27 @@
+/* CSS Float */
+img{
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+#img1{
+    float:right;
+}
+#img2{
+
+    float: left;
+}
+ 
+ 
+
+ul{
+    background-color: green;
+    list-style-type: none;
+    overflow: auto;
+}
+li{
+    color: white;
+    padding: 10px 15px;
+    float: left;
+}
+

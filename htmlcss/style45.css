@@ -1,0 +1,37 @@
+/* Advanced Selectors in CSS */
+/* h1, p,li{
+    color: red;
+} */
+/* div ~ a{
+    color:  red;
+} */
+
+/* div + a{
+    color: red;
+} */
+/* div >a{
+    color: red;
+} */  
+/* 
+Attribute selector
+a[href="https://www.google.com"]{
+
+    color: red;
+} */
+/* Universal selector
+ *{
+    border: 1px solid red;
+} */
+
+/* #list2{
+    color: blue;
+}
+.list5{
+    color: red;
+}
+a:hover{
+    color: red;
+}
+p::first-line{
+    color: red;
+} */

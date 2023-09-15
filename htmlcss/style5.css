@@ -1,0 +1,10 @@
+#bg
+{
+    /*for multiple images*/
+    background-color:black;
+    background-image: url('images/image2.jpg'), url('images/image4.png');
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    background-size: 40% 50% , 40% 30%;
+    color: white;
+} 

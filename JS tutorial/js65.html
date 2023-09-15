@@ -1,0 +1,40 @@
+<!-- Time out and Time Interval in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <button id="btn">Clear Interval</button>
+
+    <script>
+
+        /*
+        let timeOutId = setTimeout(myFunction, 5000);   //5000 mean 5 seconds. it can show the message after 5 seconds.it can not repeat again and again.
+
+        function myFunction(){
+            alert("Please subscribe...");
+        }
+        clearTimeout(timeOutId);
+        */
+
+        var t1 = setInterval(fun,2000);
+        function fun(){
+            console.log("please login")
+            // alert("Plaese login...");
+        }
+
+        let btn1 = document.getElementById("btn");
+
+        btn1.addEventListener("click", function(){
+            clearInterval(t1);
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* CSS table */
+table{
+    border: 5px solid blue;
+    border-collapse: collapse;
+    border-spacing: 15px 25px ;
+    empty-cells: hide;
+    table-layout: fixed;
+    width: 600px;
+    height: 500px;
+}
+caption{
+    border: 5px solid red;
+    caption-side: bottom;
+    background-color: khaki;
+}
+tr{
+    border: 2px solid black;
+    background-color: gray;
+    color: white;
+}
+th{
+    border: 1px solid black;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+td{
+    color: black;
+    background-color: aqua;
+    border: 2px solid chocolate;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+} 

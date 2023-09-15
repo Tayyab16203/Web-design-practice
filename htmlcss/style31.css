@@ -1,0 +1,25 @@
+/* CSS display Property */
+/* block
+      1.New line
+      2.Full width
+      3.height and width
+ Inline
+      1.Not new line
+      2.no full width
+      3.No height and width
+ Inline-block
+      1.Not new line
+      2.no full width
+      3.height and width
+  */
+  .display{
+    border: 2px solid red;
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+  }
+  #div1{
+    /* display: none; */
+    /* visibility: hidden; */
+    height: 300px;
+  }

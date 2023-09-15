@@ -1,0 +1,29 @@
+<!-- Change Attribute in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+
+    <button id="btn" class="btan"> send </button>
+        
+        <script>
+            let btn = document.getElementById("btn");
+
+            btn.setAttribute("name", "form1");         //setAttribute("Attribute name", "value").
+
+            let checkval = btn.getAttribute("id");     //we can check attribute .
+            console.log(checkval);
+
+            btn.removeAttribute("class");              //to remove attribute
+
+            let val = btn.hasAttribute("class");       //it can show that attribute are availible or not , it give answer in (true or false)
+            console.log(val);
+        </script>
+
+    </body>
+</html>

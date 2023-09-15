@@ -1,0 +1,24 @@
+@font-face
+{
+    font-family: abc;
+    src: url('Fonts/GreatVibes-Regular.ttf');
+}
+h1
+{
+    font-family: abc;
+    font-size: 40px;
+    /* font-family: 'Raleway', sans-serif;
+    font-weight: 900; */
+
+}
+p
+{
+    font-family: abc, 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    /* font-style: italic; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-variant: small-caps; */
+    /* shotcut for fonts */
+    font: italic small-caps 600 20px abc;
+}

@@ -1,0 +1,39 @@
+<!-- Insert Adjacent HTML in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <!-- beforebegin -->
+        <div id="intro">                 <!-- Selector   -->
+            <!-- afterbegin -->
+            <h2>Heading</h2>
+            <p>This is a p tag.</p>
+            <!-- beforend -->
+        </div>
+        <!-- afterend -->
+        <script>
+            let elm  =document.getElementById("intro");
+            
+            //beforebegin
+            let h1 = "<h1> New h1 </h1>";
+            elm.insertAdjacentHTML("beforebegin", h1);
+            
+            //afterbegin
+            let p = "<p> this is a paragraph. </P>";
+            elm.insertAdjacentHTML("afterbegin", p);
+            
+            //beforeend
+            let li = "<li> list item. </li>";
+            elm.insertAdjacentHTML("beforeend", li);
+            
+            //afterend
+            let h4 = "<h4> this is a small heading </h4>";
+            elm.insertAdjacentHTML("afterend", h4);
+        </script>
+    </body>
+</html>
