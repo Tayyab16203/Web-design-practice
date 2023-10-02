@@ -55,7 +55,7 @@
 
 
             text = text.trim();
-            let words = text.split(" ");
+            let words = text.split(/\s+/);
             let cleanList = words.filter(function(elm){
                 return elm != "";
             });
