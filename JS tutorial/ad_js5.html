@@ -1,0 +1,28 @@
+<!-- Rest Operator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let add = function(name,course, ...args){
+            document.write(`hello ${name} of ${course} : `)
+            let sum = 0; 
+            for(let i in args){
+                sum = sum + args[i];
+            }
+            document.write(sum + "<br>");
+        }
+
+        add("tayyab", "BSCS", 20, 40,20);
+        
+        add("rehman", "BBA", 20,2);
+
+
+    </script>
+</body>
+</html>
