@@ -1,0 +1,41 @@
+<!-- Spread Operator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance js</title>
+</head>
+<body>
+    
+    <script>
+        var arr1 = [10,20,30,40];
+
+        // var arr2 = [...arr1];       //Spread Operator (...arr). we can change array into simple value.
+        // arr1.push(50);
+
+        var arr2 = [50,60];
+
+        var arr3 = [...arr1, ...arr2, 80,90];
+
+        // console.log(arr1);
+        // console.log(arr2); 
+        console.log(arr3);
+
+        
+        var obj1 = {
+            name : "yahoo baba",
+            course : "Bteach"
+        };
+
+        var obj2 = {
+            age : 25
+        };
+
+        var obj3 = {...obj1, ...obj2}; 
+        console.log(obj3);
+
+    </script> 
+
+</body>
+</html>

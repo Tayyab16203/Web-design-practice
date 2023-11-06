@@ -1,0 +1,70 @@
+<!-- Object literals -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance js</title>
+</head>
+<body>
+    
+    <script>
+        // // first example
+        // let name = "yahoo baba";
+        // let course = "Bteach";
+
+        // var obj = {
+        //     name,
+        //     course,
+        // }
+        // console.log(obj);
+
+
+        // // 2nd example
+        // let n = "student";
+        // let obj = {
+        //     [n + "name"] : "yahoo baba",
+        //     course : "Bteach",
+        //     detail : function(){
+        //         return `${this.studentname} is student of  ${this.course}`
+        //     }
+        // }
+        // console.log(obj);
+        // console.log(obj.name);
+        // console.log(obj.detail());
+
+
+        // // 3rd Example
+        // // object literals : New Function Syntax
+        // let r = "roll_no";
+
+        // let obj ={
+        //     [r] : 101,
+        //     course : "Bteach",
+        //     // New Function Syntax
+        //     detail(){
+        //         return `${this.roll_no} is the student of ${this.course}`
+        //     }
+        // }
+        // console.log(obj['detail']());
+
+
+        
+        // 4th Example
+        let fname = "yahoo";
+        let lname = "baba"
+        let course = "Bteach";
+
+        function student(fname, lname, course){
+            let fullname = fname + " " + lname;
+            return {fullname, course};
+        }
+        let s = student(fname, lname, course);
+        console.log(s);
+        console.log(s.fullname);
+        console.log(s.course);
+          
+    </script>
+
+</body>
+</html>
