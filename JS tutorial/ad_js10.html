@@ -1,0 +1,56 @@
+<!-- Oops introduction -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance js</title>
+</head>
+<body>
+    
+    <script>
+        // // Class method
+        // class hello{
+        //     message(){
+        //         console.log("hello Everyone")
+        //     }
+        //     sorry(){
+        //         console.log("Sorry Everyone")
+        //     }
+        // }
+        // let a =new hello();
+        // a.message();
+        // a.sorry();
+
+
+
+        // Constructor Method.
+        class student{
+            constructor(name,age){
+                this.studentname = name;
+                this.studentage = age;
+                console.log("constructor function");
+            }
+            hello(){
+                console.log(`hello ${this.studentname} your age is ${this.studentage}`);
+            }
+        }
+        let a = new student("yahoo baba",25);
+        let b = new student("tayyab",22);
+        a.hello();
+        b.hello();
+
+
+        // prototype Method.
+        
+        // Static Method.
+        class student1{
+            static staticfunction(){
+                console.log('static function');
+            }
+        }
+        student1.staticfunction();
+    </script>
+
+</body>
+</html>

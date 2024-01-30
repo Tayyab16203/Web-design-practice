@@ -1,0 +1,49 @@
+<!-- Destructuring array -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance js</title>
+</head>
+<body>
+    
+
+    <script>
+        // <!-- Destructuring array -->
+        let user = ["yahoo baba", 25, "Delhi",["Male", 2500000]];
+        let [name, age = 20, city, [gender, Salary]] = user;  // age default value is 20.
+        console.log(name);
+        console.log(age);
+        console.log(city);
+        console.log(gender);
+        console.log(Salary);
+
+
+        // // in Rest Operator
+        //  let user = ["yahoo baba", 25, "Delhi"];
+        // let [name, ...args] = user;  // age default value is 20.
+        // console.log(name);
+        // console.log(args);
+
+
+        // Using a function
+        // 1st method:
+        // function user([name, age = 20, city]){  // age default value is 20.
+        //     console.log(name);
+        //     console.log(age);
+        //     console.log(city);
+        // } 
+        // user(["yahoo baba", 25, "Delhi"]);
+
+        // // 2nd method
+        // function user(){
+        //     return ["yahoo baba", 25, "Delhi"]
+        // } 
+        // let [name,age,city] = user();
+        // console.log(city);
+
+    </script>
+
+</body>
+</html>
