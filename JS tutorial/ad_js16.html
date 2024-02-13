@@ -1,0 +1,27 @@
+<!-- Try Catchv in javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS</title>
+</head>
+<body>
+    <script>
+        async function test(){
+            try {
+                const response = await fetch("jsondata/student.json");
+                const students = await response.json();
+                return students;
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        test().then((result) => {
+            console.log(result);
+        });
+
+    </script>
+</body>
+</html>
