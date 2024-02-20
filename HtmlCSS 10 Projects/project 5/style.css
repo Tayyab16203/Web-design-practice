@@ -92,12 +92,13 @@ nav{
     transition: 0.2s ease-in-out;
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
 }
+
+/* Divider Line */
 .divider{
     border: 1px solid #ccc;
     margin: 20px 0;
     transition: 0.2s;
 }
-e/* Divider Line */
 .divider:hover{
     border: 1px solid rgb(81, 81, 177);
     transition: 0.2s;
