@@ -29,6 +29,7 @@ nav{
     margin-bottom: 32px;
     background-color: white;
     padding: 10px;
+    z-index: 50;
 }
 .navigation{
     display: flex;
@@ -36,7 +37,6 @@ nav{
     align-items: center;
 }
 .container{
-    width: 1200px;
     margin: 0 auto;
 }
 
@@ -82,6 +82,9 @@ nav{
     gap: 20px;
     justify-content: center;
 }
+.feature img{
+    width: 72px;
+}
 .feature{
     display: flex;
     gap: 20px;
@@ -104,9 +107,91 @@ nav{
     transition: 0.2s;
 }
 
-/* Menu */
+/* Menu Section */
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+.menu .tag{
+    align-self: center;
+}
+.grid-image{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.grid-image:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3" 
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7" ;
+}
 
+.item1 {
+    grid-area: I1;
+}
+.item2 {
+    grid-area: I2;
+}
+.item3 {
+    grid-area: I3;
+}
+.item4 {
+    grid-area: I4;
+}
+.item5 {
+    grid-area: I5;
+}
+.item6 {
+    grid-area: I6;
+}
+.item7 {
+    grid-area: I7;
+}
 
+/* Footer Section */
+footer{
+    background-color: #fff0db;
+}
+.footer_container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.link_list h3{
+    margin-bottom: 10px;
+    color:  gray;
+}
+.news_letter h3{
+    margin-bottom: 10px;
+    color:  gray;
+}
+.link_list ul{
+    list-style: none;
+}
+.link_list ul li{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.news_letter input{
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+.icon_container{
+    display: flex;
+    gap: 15px;
+    font-size: 32px;
+}
 
 @media screen and (max-width: 786px) {
     .hero{
@@ -125,5 +210,24 @@ nav{
     }
     .hero_content h1{
         font-size: 32px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .grid{
+        padding: 10px;
+    }
+    .grid-image{
+        border-radius: 0px;
+    }
+    .footer_container{
+        flex-direction: column;
+    }
+
+    .link_list{
+        margin: 20px 0;
     }
 }
