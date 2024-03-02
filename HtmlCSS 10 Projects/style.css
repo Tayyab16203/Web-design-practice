@@ -65,8 +65,8 @@ nav li:hover{
 .logo{
     font-size: 2rem;
     font-weight: 700;
+    animation: blink 0.75s step-end infinite;
 }
-
 /* hero section */
 #hero{
     background: var(--dark-color);
@@ -105,7 +105,7 @@ nav li:hover{
     border-right: 0.15em solid orange;
     white-space: nowrap;  /*Keep the content on single line*/
     margin: 0 auto;
-    animation: typing 5s steps(40, end), blink_caret 0.75s step-end infinite,change_color 3s infinite;
+    animation: typing 5s steps(40, end), blink_caret 0.75s step-end infinite;
 }
 @keyframes change_color {
     0% { color: red;}
