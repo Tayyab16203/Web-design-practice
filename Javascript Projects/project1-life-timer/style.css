@@ -76,3 +76,16 @@ html,body{
     font-size: 4rem;
     color: white;
 }
+
+@media (max-width: 768px){
+    .time-container{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .time-container h2{
+        min-width: 10rem;
+    }
+    .container{
+        text-align: center;
+    }
+}
