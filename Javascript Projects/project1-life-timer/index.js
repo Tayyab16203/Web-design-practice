@@ -4,7 +4,7 @@ let dateOfBirth;
 const settingCogEl = document.getElementById("settingIcon"); 
 const settingContentEl = document.getElementById("settingContent");
 const initialTextEl = document.getElementById("initialText");
-const afterDOBBtnTextEl =document.getElementById("afterDOBBtnText");
+const afterDOBBtnTextEl = document.getElementById("afterDOBBtnText");
 const dobButtonEl =document.getElementById("dobButton");
 const dobInputEl =document.getElementById("dobInput");
 
