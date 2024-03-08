@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myTunes Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
     <script src="https://kit.fontawesome.com/be2c73339d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo">myTunes</div>
-            <div class="menu_bar">
+            <div class="menu_bar" id="menuBar">
               <i class="fas fa-bars"></i>
             </div>
             <ul>
@@ -27,8 +28,24 @@
                 <a href="#gift">
                   <li>Gift Cards</li>
                 </a>
-              </ul>
+            </ul>
         </nav>
+        <div class="menu_mobile">
+          <ul>
+            <a href="#hero" onclick="onClose()">
+              <li>Overview</li>
+            </a>
+            <a href="#music" onclick="onClose()">
+              <li>Music</li>
+            </a>
+            <a href="#video" onclick="onClose()">
+              <li>Video</li>
+            </a>
+            <a href="#gift" onclick="onClose()">
+              <li>Gift Cards</li>
+            </a>
+        </ul>
+        </div>
     </header>
     <main>
         <section class="hero-section" id="hero">
